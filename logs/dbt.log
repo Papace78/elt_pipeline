@@ -30,3 +30,33 @@ click.exceptions.Abort
 [0m18:56:17.933700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf78a520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf648830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf7cecf0>]}
 [0m18:56:17.937309 [debug] [MainThread]: Flushing usage events
 [0m18:56:18.364725 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:39:44.059533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f457cfafa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f457bdd7ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f457bdd7890>]}
+
+
+============================== 16:39:44.072948 | b1ca1e04-69cb-4236-b253-e41c5282482c ==============================
+[0m16:39:44.072948 [info ] [MainThread]: Running with dbt=1.10.4
+[0m16:39:44.074331 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/papace/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt init', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:40:00.052502 [debug] [MainThread]: Starter project path: /home/papace/.dbt-env/lib/python3.13/site-packages/dbt/include/starter_project
+[0m16:40:00.071647 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:40:00.072786 [info ] [MainThread]: Setting up your profile.
+[0m16:42:22.572843 [info ] [MainThread]: Profile custom_postgres written to /home/papace/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:42:22.574393 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 169.32701, "process_in_blocks": "1864", "process_kernel_time": 0.201337, "process_mem_max_rss": "106892", "process_out_blocks": "104", "process_user_time": 1.486063}
+[0m16:42:22.575366 [debug] [MainThread]: Command `dbt init` succeeded at 16:42:22.575153 after 169.33 seconds
+[0m16:42:22.576099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f457be9a8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f457c56d010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f457be7d6a0>]}
+[0m16:42:22.577032 [debug] [MainThread]: Flushing usage events
+[0m16:42:23.000397 [debug] [MainThread]: An error was encountered while trying to flush usage events
