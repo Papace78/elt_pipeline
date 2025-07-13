@@ -1,0 +1,32 @@
+[0m18:56:15.836436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00d05e0050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00d1feccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf71bed0>]}
+
+
+============================== 18:56:15.891093 | d80997c0-65cb-4a0f-ba77-2ff53b2f9b83 ==============================
+[0m18:56:15.891093 [info ] [MainThread]: Running with dbt=1.10.4
+[0m18:56:15.891955 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/papace/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:56:15.949582 [info ] [MainThread]: Creating dbt configuration folder at /home/papace/.dbt
+[0m18:56:17.913177 [error] [MainThread]: Encountered an error:
+
+[0m18:56:17.923446 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/dbt/cli/main.py", line 483, in init
+    results = task.run()
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/dbt/task/init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/click/termui.py", line 168, in prompt
+    value = prompt_func(prompt)
+  File "/home/papace/.dbt-env/lib/python3.13/site-packages/click/termui.py", line 151, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:56:17.927935 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 2.1699324, "process_in_blocks": "30640", "process_kernel_time": 0.380987, "process_mem_max_rss": "128028", "process_out_blocks": "33160", "process_user_time": 3.852985}
+[0m18:56:17.930337 [debug] [MainThread]: Command `dbt init` failed at 18:56:17.929608 after 2.17 seconds
+[0m18:56:17.933700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf78a520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf648830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f00cf7cecf0>]}
+[0m18:56:17.937309 [debug] [MainThread]: Flushing usage events
+[0m18:56:18.364725 [debug] [MainThread]: An error was encountered while trying to flush usage events
