@@ -4,4 +4,5 @@ Several branches exist:
 
 - main : contains a custom ELT project that utilizes Docker-Compose and PostgreSQL.
 - dbt : impletementd dbt macros and jinjas.
-- cron : Reconfigured Dockerfile configuration to integrate start.sh cron job.
+- cron : Reconfigured Dockerfile to integrate start.sh cron job.
+- airflow : Reconfigured docker-compose and added airflow set up
